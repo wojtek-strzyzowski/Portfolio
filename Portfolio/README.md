@@ -43,7 +43,7 @@ npm run build
 npm run lint
 ```
 
-###Folder Structure
+### Folder Structure
 
 ```sh
 src/
