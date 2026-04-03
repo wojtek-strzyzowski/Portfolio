@@ -44,6 +44,8 @@ npm run lint
 ```
 
 ###Folder Structure
+
+```sh
 src/
 │
 ├── assets/
@@ -80,3 +82,5 @@ src/
 │
 ├── App.vue
 └── main.js
+
+```
