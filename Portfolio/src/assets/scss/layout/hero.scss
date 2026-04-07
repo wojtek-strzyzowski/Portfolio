@@ -1,0 +1,84 @@
+@use "../abstracts/variables" as vars;
+
+.hero {
+  min-height: 30vh;
+  display: flex;
+  align-items: center;
+  
+}
+
+.hero__inner {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-inline: 2rem;
+}
+
+.hero__surface {
+  max-width: 1200px;
+  width: 100%;
+  padding: 4.5rem;
+  border-radius: 24px;
+  text-align: center;
+}
+
+.hero__surface > * {
+  max-width: 900px;
+  margin-inline: auto;
+}
+
+.hero__actions {
+  margin-top: 2.2rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+
+.hero__actions {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2.2rem;
+
+  a {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.5rem 1.4rem;
+    border-radius: 999px;
+    border: 1px solid rgba(212, 175, 55, 0.35);
+    font-size: 0.9rem;
+
+    color: vars.$text-secondary;
+    text-decoration: none;
+    position: relative;
+
+    &:hover {
+      color: vars.$text-primary;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      bottom: -8px;
+      width: 0;
+      height: 2px;
+
+      background: linear-gradient(
+        90deg,
+        transparent,
+        vars.$gold-soft,
+        transparent
+      );
+
+      transition: width 0.3s ease, left 0.3s ease;
+    }
+
+    &:hover::after {
+      width: 100%;
+      left: 0;
+    }
+  }
+}
+

@@ -1,0 +1,37 @@
+@use "../abstracts/variables" as vars;
+
+
+body {
+    
+    
+  background:
+    radial-gradient(
+      1200px 900px at 50% 20%,
+      rgba(212, 175, 55, 0.527),
+      transparent 45%
+    ),
+    radial-gradient(
+      1000px 800px at 20% 80%,
+      rgba(203, 213, 225, 0.26),
+      transparent 50%
+    ),
+    linear-gradient(
+      180deg,
+      #020617,
+      #000008
+    );
+
+  
+    color: vars.$text-primary;
+    min-height: 100vh;
+    font-family: vars.$font-base;
+  
+
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+main {
+    padding-top: 350px;
+  }

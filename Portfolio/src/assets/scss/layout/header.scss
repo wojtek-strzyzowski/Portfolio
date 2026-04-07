@@ -1,0 +1,67 @@
+@use "../abstracts/variables" as vars;
+
+.app-header {
+  position: fixed;
+  inset: 0 auto auto 0;
+  width: 100%;
+  z-index: 100;
+
+  background: rgba(2, 6, 23, 0.55);
+  backdrop-filter: blur(18px);
+
+  border-bottom: 1px solid rgba(212, 175, 55, 0.12);
+}
+
+
+.header-nav {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+
+  padding: 1.5rem 2rem;
+}
+
+
+.header-brand {
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+.header-links {
+  display: flex;
+  gap: 3rem;
+  list-style: none;
+  justify-self: center;
+
+  a {
+    color: vars.$text-secondary;
+    text-decoration: none;
+    position: relative;
+
+    &:hover {
+      color: vars.$text-primary;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      bottom: -8px;
+      width: 0;
+      height: 2px;
+
+      background: linear-gradient(
+        90deg,
+        transparent,
+        vars.$gold-soft,
+        transparent
+      );
+      transition: width 0.3s ease, left 0.3s ease;
+    }
+
+    &:hover::after {
+      width: 100%;
+      left: 0;
+    }
+  }
+}
