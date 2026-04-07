@@ -2,6 +2,7 @@
 
 import AppHeader from "@/components/layouts/AppHeader.vue"
 import AppHero from "@/components/sections/HeroSection.vue"
+import About from "@/components/sections/AboutSection.vue"
 
 </script>
 
@@ -23,10 +24,7 @@ import AppHero from "@/components/sections/HeroSection.vue"
       <AppHero />
     <!--</section> -->
 
-
-    <section id="about" class="section">
-      <!-- About -->
-    </section>
+    <About />
 
     <section id="projects" class="section">
       <!-- Projects -->
@@ -35,7 +33,7 @@ import AppHero from "@/components/sections/HeroSection.vue"
     <section id="contact" class="section">
       <!-- Contact -->
     </section>
-    
+
   </main>
 </template>
 

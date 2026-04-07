@@ -1,86 +1,35 @@
-# Portfolio
+# Portfolio – Wojciech Strzyzowski
 
-This template should help get you started developing with Vue 3 in Vite.
+This repository contains my personal developer portfolio, built with a clear focus on clean architecture, readability, and intentional design decisions.
 
-## Recommended IDE Setup
+The goal of this portfolio is not to showcase visual effects, but to communicate who I am as a developer, how I think about structure, and how I approach building user interfaces in a maintainable and professional way.
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+---
 
-## Recommended Browser Setup
+## ✨ Philosophy
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+This portfolio follows a few core principles:
 
-## Customize configuration
+- **Content over effects** – layout and typography before animations  
+- **Clear separation of concerns** – structure, layout, and styling are kept separate  
+- **Readable and scalable code** – no shortcuts that would hurt maintainability  
+- **Intentional design** – every element has a reason to exist  
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+Visual details are subtle and supportive. The page should feel calm, focused, and honest.
 
-## Project Setup
+---
 
-```sh
-npm install
-```
+## 🛠 Tech Stack
 
-### Compile and Hot-Reload for Development
+- **Vue 3** (Composition API, `<script setup>`)
+- **Vite**
+- **SCSS (Sass)** with modern `@use` module system
+- **CSS-first layout approach** (no UI framework)
+- **GitHub Codespaces** for development
 
-```sh
-npm run dev
-```
+No UI frameworks are used on purpose to keep full control over layout and styling.
 
-### Compile and Minify for Production
+---
 
-```sh
-npm run build
-```
+## 📁 Project Structure
 
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
-
-### Folder Structure
-
-```sh
-src/
-│
-├── assets/
-│   ├── styles/
-│   │   ├── _variables.scss
-│   │   ├── _globals.scss
-│   │   └── main.scss
-│   └── images/
-│
-├── components/
-│   ├── layout/
-│   │   ├── AppNavbar.vue
-│   │   └── AppFooter.vue
-│   └── ui/
-│       ├── BaseButton.vue
-│       └── BaseCard.vue
-│
-├── views/
-│   ├── HomeView.vue
-│   ├── AboutView.vue
-│   └── ProjectsView.vue
-│
-├── router/
-│   └── index.js
-│
-├── stores/
-│   └── app.js
-│
-├── plugins/
-│   └── vuetify.js
-│
-├── composables/
-│   └── useTheme.js
-│
-├── App.vue
-└── main.js
-
-```

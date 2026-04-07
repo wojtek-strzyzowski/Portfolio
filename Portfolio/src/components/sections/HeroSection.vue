@@ -7,7 +7,7 @@
 
         <p class="hero__subtitle">
           Web Developer<br />
-          Vue · Business Applications · Power Platform 
+          I build role-based business applications and automate real-world processes.
         </p>
 
         <div class="hero__actions">
