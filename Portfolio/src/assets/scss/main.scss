@@ -11,7 +11,9 @@
 @use "layout/introquote"; 
 @use "layout/about";
 @use "layout/casestudy";
-//@use "layout/sections";
+@use "layout/minicasestudy";
+@use "layout/section";
+@use "layout/contact";
 
 /* components */
 @use "components/surface";

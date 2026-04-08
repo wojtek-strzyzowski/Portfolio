@@ -2,7 +2,9 @@
     <header class="app-header">
       <nav class="header-nav container">
         <div class="header-brand">
-          <h1>WS</h1>
+          <h1>
+            <a href="#intro">WS</a>
+          </h1>
         </div>
   
         <ul class="header-links">

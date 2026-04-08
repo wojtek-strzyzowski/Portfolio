@@ -1,0 +1,51 @@
+@use "../abstracts/variables" as vars;
+
+.contact {
+  padding: 6rem 0;
+}
+
+.contact__inner {
+  max-width: 800px;
+  margin-inline: auto;
+  padding-inline: 2rem;
+}
+
+.contact__title {
+  font-size: clamp(1.8rem, 2.5vw, 2.2rem);
+  font-weight: 500;
+  margin-bottom: 2.5rem;
+
+  color: vars.$text-primary;
+}
+
+.contact__intro {
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+  color: vars.$text-primary;
+}
+
+.contact p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: vars.$text-secondary;
+  margin-bottom: 1rem;
+}
+
+.contact__links {
+  margin-top: 2.5rem;
+  font-size: 0.9rem;
+}
+
+.contact__links a {
+  color: vars.$text-primary;
+  text-decoration: none;
+}
+
+.contact__links a:hover {
+  text-decoration: underline;
+}
+
+.contact__links span {
+  margin: 0 0.6rem;
+  color: vars.$text-secondary;
+}

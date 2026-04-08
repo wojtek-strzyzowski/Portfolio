@@ -3,7 +3,7 @@
       <div class="case-study__inner">
   
         <h2 class="case-study__title">
-          Case Study – Role‑Based Business Application
+          Case Study – Deeplink‑Driven Business Process
         </h2>
   
         
@@ -22,15 +22,17 @@
             </ul>
             </div>
 
-            <div class="case-study__block">
-            <h3>Solution Overview</h3>
-            <ul>
-                <li>Single, centralized application with role‑dependent behavior</li>
-                <li>Entry and navigation controlled by contextual access parameters</li>
-                <li>Status‑driven workflow orchestration across departments</li>
-                <li>Automated document and media handling within the process</li>
-            </ul>
-            </div>
+
+        <div class="case-study__block">
+          <h3>Solution Overview</h3>
+          <ul>
+            <li>Single, centralized application driven by process context, not client-side role switching</li>
+            <li>Controlled entry into the process via deeplink parameters defining the active workflow step</li>
+            <li>Status-based orchestration ensuring correct execution order across departments</li>
+            <li>Automated document and media handling decoupled from the user interface</li>
+          </ul>
+        </div>
+
 
         </div>
 
@@ -41,8 +43,7 @@
             alt="Role-based business application showing centralized single-screen workflow"
             />
             <p class="caption">
-            Centralized single‑screen application with role‑dependent behavior and
-            status‑driven workflow control.
+              Centralized single‑screen application driven by process context and secured workflow state.
             </p>
         </div>
 
@@ -59,15 +60,17 @@
           </div>
         </div>
   
+
         <div class="case-study__block">
           <h3>Key Decisions</h3>
           <ul>
-            <li>Single‑screen design to avoid state fragmentation across screens</li>
-            <li>Role handling via deeplink parameters instead of separate apps</li>
-            <li>Centralized validation logic to ensure consistent data quality</li>
-            <li>Workflow automation outside the UI to keep application logic lean</li>
+            <li>Single-screen design to avoid state fragmentation across multiple UI flows</li>
+            <li>Process access via deeplinks instead of role-based screen switching to prevent client-side permission risks</li>
+            <li>Centralized validation logic to ensure consistent data quality across all process steps</li>
+            <li>Workflow execution handled by dedicated flows to enforce server-side control and traceability</li>
           </ul>
         </div>
+
   
         <div class="case-study__block">
           <h3>Outcome</h3>

@@ -20,7 +20,7 @@ body {
       #020617,
       #000008
     );
-
+    background-attachment: fixed;
   
     color: vars.$text-primary;
     min-height: 100vh;
@@ -33,5 +33,11 @@ body {
 }
 
 main {
-    padding-top: 350px;
+    padding-top: 300px;
   }
+
+
+html {
+      scroll-padding-top: 120px;
+    }
+

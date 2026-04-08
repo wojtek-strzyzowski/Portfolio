@@ -8,6 +8,8 @@ import AppHeader from "@/components/layouts/AppHeader.vue"
 import AppHero from "@/components/sections/HeroSection.vue"
 import About from "@/components/sections/AboutSection.vue"
 import CaseStudy from "./components/sections/CaseStudy.vue"
+import MiniCaseStudy from "./components/sections/MiniCaseStudy.vue"
+import Contact from "./components/sections/ContactSection.vue"
 
 onMounted(() => {
   const text = document.querySelector(".quote-text")
@@ -50,13 +52,10 @@ onMounted(() => {
     <About />
 
     <CaseStudy />
-    <section id="projects" class="section">
-      <!-- Projects -->
-    </section>
 
-    <section id="contact" class="section">
-      <!-- Contact -->
-    </section>
+    <MiniCaseStudy />
+
+    <Contact /> 
 
   </main>
 </template>
