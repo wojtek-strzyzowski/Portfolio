@@ -12,9 +12,9 @@ const isCaseStudy = computed(() =>
 
 function handleLogoClick() {
   if (isCaseStudy.value) {
-    router.push("/");      // ✅ Zurück zur Home
+    router.push("/");    
   } else {
-    location.hash = "#intro"; // ✅ Scroll auf Home
+    location.hash = "#intro"; 
   }
 }
 </script>
