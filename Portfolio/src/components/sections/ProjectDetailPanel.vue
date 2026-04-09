@@ -1,54 +1,3 @@
-
-<template>
-  <!-- Overlay -->
-  <div
-    ref="overlay"
-    class="project-overlay"
-    @click="$emit('close')"
-  ></div>
-
-  <!-- Sliding panel -->
-  <aside
-    ref="panel"
-    class="project-panel"
-  >
-  
-  <header class="project-panel__header">
-    <h3 class="header-title">{{ project?.panelTitle }}</h3>
-
-    <button
-      class="close-btn"
-      @click="$emit('close')"
-      aria-label="Close panel"
-    >
-      ✕
-    </button>
-  </header>
-
-
-    <p class="project-panel__subtitle">
-      {{ project?.panelSubtitle }}
-    </p>
-
-    <ul v-if="project?.panelDetails?.length" class="project-panel__details">
-      <li v-for="(item, i) in project.panelDetails" :key="i">
-        {{ item }}
-      </li>
-    </ul>
-
-    <!-- Für den Überganz zur Case Study -->
-    <div class="project-panel__cta" v-if="project?.hasCaseStudy">
-      <button
-        class="case-btn"
-        @click="$emit('view-case-study', project.id)"
-      >
-        View full case study →
-      </button>
-    </div>
-
-  </aside>
-</template>
-
 <script setup>
 import { ref, watch, onMounted } from "vue";
 import gsap from "gsap";
@@ -111,3 +60,58 @@ watch(
   }
 );
 </script>
+
+
+
+
+<template>
+  <!-- Overlay -->
+  <div
+    ref="overlay"
+    class="project-overlay"
+    @click="$emit('close')"
+  ></div>
+
+  <!-- Sliding panel -->
+  <aside
+    ref="panel"
+    class="project-panel"
+  >
+  
+  <header class="project-panel__header">
+    <h3 class="header-title">{{ project?.panelTitle }}</h3>
+
+    <button
+      class="close-btn"
+      @click="$emit('close')"
+      aria-label="Close panel"
+    >
+      ✕
+    </button>
+  </header>
+
+
+    <p class="project-panel__subtitle">
+      {{ project?.panelSubtitle }}
+    </p>
+
+    <ul v-if="project?.panelDetails?.length" class="project-panel__details">
+      <li v-for="(item, i) in project.panelDetails" :key="i">
+        {{ item }}
+      </li>
+    </ul>
+
+    <!-- Für den Überganz zur Case Study -->
+    <div class="project-panel__cta" v-if="project?.hasCaseStudy">
+      <button
+        class="case-btn"
+        @click="$emit('view-case-study', project.id)"
+      >
+        View full case study →
+      </button>
+    </div>
+
+  </aside>
+</template>
+
+

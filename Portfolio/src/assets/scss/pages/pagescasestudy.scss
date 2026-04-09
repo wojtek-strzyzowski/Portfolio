@@ -1,0 +1,108 @@
+@use "../abstracts/variables" as vars;
+
+
+
+/* Wrapper */
+.case-study {
+  max-width: 900px;
+  margin-inline: auto;
+  padding: 20rem 2rem 7rem;
+}
+
+/* Back Link */
+.back {
+  background: none;
+  border: none;
+  padding: 0;
+
+  font-size: 0.85rem;
+  color: vars.$text-secondary;
+  cursor: pointer;
+
+  margin-bottom: 2.5rem;
+}
+
+.back:hover {
+  color: vars.$text-primary;
+}
+
+/* Header */
+.case-study__header {
+  margin-bottom: 3.5rem;
+}
+
+.case-study__header h1 {
+  font-size: clamp(1.6rem, 2vw, 2rem);
+  font-weight: 500;
+  margin: 0 0 0.6rem;
+
+  color: vars.$text-primary;
+}
+
+.case-study__subtitle {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  max-width: 720px;
+
+  color: vars.$text-secondary;
+}
+
+/* Sections */
+.case-study__section {
+  margin-bottom: 3.2rem;
+}
+
+.case-study__section h2 {
+  font-size: 1.05rem;
+  font-weight: 500;
+  margin-bottom: 0.6rem;
+
+  color: vars.$text-primary;
+}
+
+.case-study__section p {
+  font-size: 0.9rem;
+  line-height: 1.7;
+  max-width: 720px;
+
+  color: vars.$text-secondary;
+}
+
+/* Lists (Key aspects) */
+.case-study__section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.case-study__section li {
+  font-size: 0.9rem;
+  line-height: 1.7;
+  margin-bottom: 0.4rem;
+
+  color: vars.$text-secondary;
+}
+
+/* Screenshots – ruhig & klein */
+.case-study__screens {
+  margin: 3.5rem 0;
+}
+
+.case-study__figure {
+  margin-bottom: 2.2rem;
+  max-width: 420px;
+}
+
+.case-study__image {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+}
+
+/* Fallback */
+.case-study__empty {
+  margin-top: 6rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: vars.$text-secondary;
+}
