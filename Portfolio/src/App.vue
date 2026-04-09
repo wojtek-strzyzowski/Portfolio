@@ -10,6 +10,8 @@ import About from "@/components/sections/AboutSection.vue"
 import CaseStudy from "./components/sections/CaseStudy.vue"
 import MiniCaseStudy from "./components/sections/MiniCaseStudy.vue"
 import Contact from "./components/sections/ContactSection.vue"
+import Carousel from "./components/sections/Carousel.vue"
+import ProjectOverview from "./components/sections/ProjectsOverview.vue"
 
 onMounted(() => {
   const text = document.querySelector(".quote-text")
@@ -54,6 +56,8 @@ onMounted(() => {
     <CaseStudy />
 
     <MiniCaseStudy />
+
+    <ProjectOverview /> 
 
     <Contact /> 
 

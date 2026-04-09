@@ -1,0 +1,75 @@
+@use "../abstracts/variables" as vars;
+
+.projects-overview {
+    padding: 8rem 0;
+    text-align: center;
+  }
+
+  .carousel_title{
+    padding-bottom: 3.5rem;
+  }
+  
+  .carousel {
+    perspective: 900px;
+    margin-top: 2.5rem;
+  }
+  
+  .carousel__inner {
+    position: relative;
+    width: 260px;
+    height: 230px;
+    margin: 0 auto;
+  
+    transform-style: preserve-3d;
+    animation: rotate 15s  infinite !important;
+  }
+  
+  .carousel__card {
+    position: absolute;
+    inset: 0;
+    padding: 1.6rem;
+  
+    border-radius: 14px;
+    background: rgba(15, 23, 42, 0.55);
+    border: 1px solid rgba(255,255,255,0.12);
+  
+    color: vars.$text-primary;
+  }
+  
+  /* Positionierung der Cards */
+  .carousel__card:nth-child(1) {
+    transform: rotateY(0deg) translateZ(280px);
+  }
+  .carousel__card:nth-child(2) {
+    transform: rotateY(120deg) translateZ(280px);
+  }
+  .carousel__card:nth-child(3) {
+    transform: rotateY(240deg) translateZ(280px);
+  }
+  
+  /* Sehr langsame Rotation */
+  @keyframes rotate {
+    /* Card 1 vorne */
+    0%   { transform: rotateY(0deg); }
+    20%  { transform: rotateY(0deg); }   /* PAUSE */
+  
+    /* Übergang zu Card 2 */
+    33%  { transform: rotateY(120deg); }
+    53%  { transform: rotateY(120deg); } /* PAUSE */
+  
+    /* Übergang zu Card 3 */
+    66%  { transform: rotateY(240deg); }
+    86%  { transform: rotateY(240deg); } /* PAUSE */
+  
+    /* Zurück zu Card 1 */
+    100% { transform: rotateY(360deg); }
+  }
+  
+  
+
+  
+@media (prefers-reduced-motion: reduce) {
+  .carousel__inner {
+    animation: none;
+  }
+}
