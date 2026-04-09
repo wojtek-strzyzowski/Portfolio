@@ -1,43 +1,85 @@
 export const projects = [
-    {
-      id: "kompass-ai",
-      title: "Kompass AI SEB",
-      subtitle: "Enterprise knowledge platform",
-      images: [
-        "/src/assets/images/kompass-1.png",
-        "/src/assets/images/kompass-2.png"
-      ],
-      details: [
-        "Developed in collaboration with ZHAW",
-        "Used organization-wide across SEB",
-        "Structured guidance around AI-related work"
-      ]
-    },
-    {
-      id: "attendance-app",
-      title: "Attendance & Absence Management App",
-      subtitle: "Mobile business application",
-      images: [
-        "/src/assets/images/attendance-1.png"
-      ],
-      details: [
-        "Daily attendance overview",
-        "Structured absence reporting",
-        "Mobile-first user interface"
-      ]
-    },
-    {
-      id: "workflow-automation",
-      title: "Workflow Automation",
-      subtitle: "State-driven processes",
-      images: [
-        "/src/assets/images/workflow-1.png"
-      ],
-      details: [
-        "Process-based orchestration",
-        "Server-side validations",
-        "Audit-friendly design"
-      ]
-    }
-  ];
-  
+  /* ==========================
+     KOMPASS AI
+     ========================== */
+  {
+    id: "kompass-ai",
+
+    // Card (Overview)
+    cardTitle: "Kompass AI SEB",
+    cardSubtitle: "Enterprise knowledge platform developed with ZHAW",
+
+    // Panel (Context)
+    panelTitle: "Kompass AI SEB",
+    panelSubtitle: "Enterprise-wide knowledge platform for AI-related work",
+
+    panelDetails: [
+      "Developed in collaboration with ZHAW",
+      "Used organization-wide across SEB",
+      "Provides structured guidance for AI processes"
+    ],
+
+    images: [
+      "/images/projects/Kompass/KompassFirst.png",
+      "/images/projects/Kompass/KompassSecond.png",
+      "/images/projects/Kompass/KompassThird.png"
+    ],
+
+    hasCaseStudy: true
+  },
+
+  /* ==========================
+     BUDGET PLANER
+     ========================== */
+  {
+    id: "budget-planner",
+
+    cardTitle: "Budget Planner",
+    cardSubtitle: "Role-based budgeting and planning system",
+
+    panelTitle: "Enterprise Budget Planner",
+    panelSubtitle: "Role-aware budget planning with automated workflows",
+
+    panelDetails: [
+      "Role-based budget visibility",
+      "Automated budget lifecycle states",
+      "Used in an operational business context"
+    ],
+
+    images: [
+      "/images/projects/Budget/FirstScreen.png",
+      "/images/projects/Budget/SecondScreen.png",
+      "/images/projects/Budget/ThirdScreen.png"
+    ],
+
+    hasCaseStudy: true
+  },
+
+  /* ==========================
+     TEAMVIEW
+     ========================== */
+  {
+    id: "teamview",
+
+    cardTitle: "TeamView",
+    cardSubtitle: "Mobile attendance and team overview app",
+
+    panelTitle: "TeamView",
+    panelSubtitle: "Mobile-first app for attendance and team transparency",
+
+    panelDetails: [
+      "Daily attendance overview",
+      "Structured absence submission",
+      "Optimized for mobile usage"
+    ],
+
+    images: [
+      "/images/projects/TV/TVfirst.png",
+      "/images/projects/TV/TVsecond.png",
+      "/images/projects/TV/TVthird.png"
+    ],
+
+    hasCaseStudy: false
+  }
+];
+``

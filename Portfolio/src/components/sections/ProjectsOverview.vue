@@ -3,6 +3,18 @@ import { ref } from "vue";
 import { projects } from "@/data/project";
 import ProjectDetailPanel from "./ProjectDetailPanel.vue"
 
+
+
+import { useRouter } from "vue-router";
+
+const router = useRouter();
+
+function goToCase(id) {
+  closeProject();               // ✅ Panel erst schließen
+  router.push(`/case/${id}`);   // ✅ dann Seite wechseln
+}
+
+
 const activeProject = ref(null);
 const isOpen = ref(false);
 
@@ -29,17 +41,26 @@ function closeProject() {
           class="carousel__card"
           @click="openProject(project)"
         >
-          <h3>{{ project.title }}</h3>
-          <p>{{ project.subtitle }}</p>
+          <h3>{{ project.cardTitle }}</h3>
+          <p>{{ project.cardSubtitle }}</p>
         </div>
       </div>
     </div>
 
-    <!-- ✅ Detail Panel -->
+    <!-- ✅ Detail Panel
     <ProjectDetailPanel
       :open="isOpen"
       :project="activeProject"
       @close="closeProject"
     />
+     -->
+     
+    <ProjectDetailPanel
+      :open="isOpen"
+      :project="activeProject"
+      @close="closeProject"
+      @view-case-study="goToCase"
+    />
+
   </section>
 </template>
